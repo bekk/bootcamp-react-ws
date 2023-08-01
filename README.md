@@ -5,6 +5,8 @@ Denne Workshoppen er for deg som kan grunnleggende HTML og CSS fra før, og som 
 ## Ressurser
 [Dokumentasjonen til React](https://react.dev/reference/react)
 
+[Presentasjonen til denne workshoppen](bekk.link/bootcamp-react-slides)
+
 ## Emoji-guide
 
 Du kommer til å se noen emojis i oppgavene. Disse betyr:
@@ -14,6 +16,8 @@ Du kommer til å se noen emojis i oppgavene. Disse betyr:
 - 🚨 Løsningsforslag: Her finner du et eksempel på hvordan du _kan_ løse oppgaven.
 
 ## Oppsett
+
+Du kan enten velge å kode oppgavene i [CodeSandbox](), noe som gjør at du kan komme raskt i gang med oppgavene, eller du kan velge å klone repoet og utvikle lokalt på din egen maskin. Da må du gjøre følgende:
 
 - Klon repoet
     - gå i terminalen din og skriv `git clone git@github.com:bekk/bootcamp-react-ws.git`

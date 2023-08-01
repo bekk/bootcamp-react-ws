@@ -17,13 +17,17 @@ Du kommer til å se noen emojis i oppgavene. Disse betyr:
 
 ## Oppsett
 
-Du kan enten velge å kode oppgavene i [CodeSandbox](), noe som gjør at du kan komme raskt i gang med oppgavene, eller du kan velge å klone repoet og utvikle lokalt på din egen maskin. Da må du gjøre følgende:
+Slik får du koden ned lokalt på din maskin:
 
 - Klon repoet
     - gå i terminalen din og skriv `git clone git@github.com:bekk/bootcamp-react-ws.git`
 - Naviger deg inn i mappa som heter `bootcamp-react-ws` ved å skrive dette i terminalen din: `cd bootcamp-react-ws`.
 - Skriv `npm install` for å installere nødvendige avhengigheter for prosjektet.
 - Deretter skriver du `npm run dev` for å starte opp nettsiden.
+
+Om kloning av repoet skulle være litt knotete kan du bruke denne [CodeSandbox-lenken](https://codesandbox.io/p/sandbox/bootcamp-react-ws-67pf2s) for å redigere rett i browseren
+
+NB! Trykk på `Fork` oppe i det høyre hjørnet for å få din egne versjon av koden.
 
 ## Oppgaver
 
@@ -106,7 +110,6 @@ I `Blog.jsx`, kommenter inn Facts-funksjonen som ligger øverst i fila, og bruk 
 
 ```
 // I Facts.jsx
-
 function Facts() {
     return {
         <>

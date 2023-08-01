@@ -1,10 +1,10 @@
 const facts = [
-  "Rowan Atkinson has a master's degree in Electrical Engineering",
-  "Chuck Norris's first name is actually Carlos",
-  "Eminem originally wanted to become a comic-book artist",
-  "Lady Gaga wrote “Just Dance” and “Born This Way” in just 10 minutes",
-  "Jack Black is the son of rocket scientists",
-  "Elvis Presley was a natural blonde",
+  "Rowan Atkinson har en mastergrad i elektroteknikk",
+  "Chuck Norris sitt første navn er egentlig Carlos",
+  "Eminem ville egentlig bli tegneseriekunstner",
+  "Lady Gaga skrev “Just Dance” og “Born This Way” på bare 10 minutter",
+  "Jack Black sine foreldre er rakettforskere",
+  "Elvis Presley sin naturlige hårfarge var blond",
 ];
 
 export default function Facts() {

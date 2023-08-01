@@ -5,7 +5,7 @@ Denne Workshoppen er for deg som kan grunnleggende HTML og CSS fra før, og som 
 ## Ressurser
 [Dokumentasjonen til React](https://react.dev/reference/react)
 
-[Presentasjonen til denne workshoppen](bekk.link/bootcamp-react-slides)
+[Presentasjonen til denne workshoppen](https://slides.com/carolineodden/intro-til-react-2023-4fee20)
 
 ## Emoji-guide
 

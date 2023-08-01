@@ -5,6 +5,9 @@ import { format, parseISO } from 'date-fns'
 const client = new ApolloClient({
     uri: 'https://api.entur.io/journey-planner/v3/graphql',
     cache: new InMemoryCache(),
+    headers: {
+        'ET-Client-Name': 'BEKK_WORKSHOP',
+    },
 });
 
 const query = gql`

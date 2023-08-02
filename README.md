@@ -220,7 +220,7 @@ useEffect(() => {
         ...
     }
 
-    const data = await fetchData()
+    fetchData()
 }, [])
 ```
 </details>

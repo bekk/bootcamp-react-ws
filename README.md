@@ -20,7 +20,7 @@ Du kommer til å se noen emojis i oppgavene. Disse betyr:
 Slik får du koden ned lokalt på din maskin:
 
 - Klon repoet
-    - gå i terminalen din og skriv `git clone git@github.com:bekk/bootcamp-react-ws.git`
+    - gå i terminalen din og skriv `git clone https://github.com/bekk/bootcamp-react-ws.git`
 - Naviger deg inn i mappa som heter `bootcamp-react-ws` ved å skrive dette i terminalen din: `cd bootcamp-react-ws`.
 - Skriv `npm install` for å installere nødvendige avhengigheter for prosjektet.
 - Deretter skriver du `npm run dev` for å starte opp nettsiden.

@@ -27,7 +27,7 @@ Slik får du koden ned lokalt på din maskin:
 
 Om kloning av repoet skulle være litt knotete kan du bruke denne [CodeSandbox-lenken](https://codesandbox.io/p/sandbox/bootcamp-react-ws-67pf2s) for å redigere rett i browseren
 
-NB! Trykk på `Fork` oppe i det høyre hjørnet for å få din egne versjon av koden.
+⚠️ NB! Trykk på `Fork` oppe i det høyre hjørnet for å få din egne versjon av koden.
 
 ## Oppgaver
 
@@ -259,7 +259,7 @@ const { stopPlace, departures } = data
 - Gå på https://entur.no/kart.
 - Skriv inn et stoppested du kjenner til. 
 - Gå i url'en på nettsiden og kopierer id'en som begynner på `NSR:`, f.eks `NSR:StopPlace:58801`.
-- Gå i `client.js` på linje 12 og erstatt den id'en med din egen id for å hente avganger for ditt stoppested!
+- Gå i `client.js` på linje 15 og erstatt den id'en med din egen id for å hente avganger for ditt stoppested!
 
 <details>
 <summary>🚨 Løsningsforslag</summary>

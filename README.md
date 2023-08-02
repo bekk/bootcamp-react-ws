@@ -3,7 +3,7 @@
 Denne Workshoppen er for deg som kan grunnleggende HTML og CSS fra før, og som vil lære deg React og alt det kule rammeverket har å by på.
 
 ## Ressurser
-[Dokumentasjonen til React](https://react.dev/reference/react)
+[Dokumentasjonen til React](https://react.dev/learn)
 
 [Presentasjonen til denne workshoppen](https://slides.com/carolineodden/intro-til-react-2023-4fee20)
 
@@ -49,7 +49,7 @@ Gå inn i `App.jsx`-komponenten inne i `src`-mappa, og fjern all koden som er me
 
 🏆 1.4 – Lag en ny fil i Oppgave1-mappa som du navngir `Title.jsx`. Kopier Title komponenten du laget i forrige oppgave inn til Title.jsx fila og eksporter den slik at den kan brukes i andre komponenter. Importer Title komponenten i `Blog.jsx` og slett samtidig Title definisjonen fra `Blog.jsx`.
 
-💡 I React kan man eksportere komponenter fra en fil, les om `default` og `named`-exports [her](https://react.dev/learn/importing-and-exporting-components#challenges).
+💡 I React kan man eksportere komponenter fra en fil, les om `default` og `named`-exports [her](https://react.dev/learn/importing-and-exporting-components).
 
 🏆 1.5 – I stedet for å hardkode navnet ditt i komponenten, gjør om Title-komponenten din til å ta inn en prop som heter `name`. Da kan du sende inn navnet ditt i Blog.jsx der du bruker Title.jsx
 

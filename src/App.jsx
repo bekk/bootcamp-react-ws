@@ -1,20 +1,20 @@
-import reactLogo from "./assets/react.svg";
+import reactLogo from './assets/react.svg';
 
-import Blog from "./Oppgave1/Blog";
+import Blog from './Oppgave1/Blog';
 
-import "./App.css";
+import './App.css';
 
 function App() {
-  return (
-    <>
-      <img className="logo" alt="logo" src={reactLogo} />
-      <h1>Bootcamp 2023</h1>
+	return (
+		<>
+			<img className="logo" alt="logo" src={reactLogo} />
+			<h1>Bootcamp 2024</h1>
 
-      <div className="card">
-        Endre kode i <code>src/App.jsx</code> og se hva som skjer!
-      </div>
-    </>
-  );
+			<div className="card">
+				Endre kode i <code>src/App.jsx</code> og se hva som skjer!
+			</div>
+		</>
+	);
 }
 
 export default App;

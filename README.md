@@ -48,7 +48,8 @@ Du kommer til å se noen emojis i oppgavene. Disse betyr:
 
 Om kloning av repoet skulle være litt knotete kan du bruke denne [CodeSandbox-lenken](https://codesandbox.io/p/sandbox/bootcamp-react-ws-67pf2s) for å redigere rett i browseren
 
-> [!WARNING] NB! Trykk på `Fork` oppe i det høyre hjørnet for å få din egne versjon av koden.
+> [!WARNING]
+> Trykk på `Fork` oppe i det høyre hjørnet for å få din egne versjon av koden.
 
 # Oppgaver
 

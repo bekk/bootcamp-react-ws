@@ -3,6 +3,7 @@
 Denne Workshoppen er for deg som kan grunnleggende HTML og CSS fra før, og som vil lære deg React og alt det kule rammeverket har å by på.
 
 ## Ressurser
+
 [Dokumentasjonen til React](https://react.dev/learn)
 
 [Presentasjonen til denne workshoppen](https://slides.com/carolineodden/intro-til-react-2023-4fee20)
@@ -11,19 +12,19 @@ Denne Workshoppen er for deg som kan grunnleggende HTML og CSS fra før, og som 
 
 Du kommer til å se noen emojis i oppgavene. Disse betyr:
 
-- 🏆 Oppgave: Her er hva du skal gjøre.
-- 💡 Tips: Litt ekstra info som kan være greit å ha for å løse en oppgave.
-- 🚨 Løsningsforslag: Her finner du et eksempel på hvordan du _kan_ løse oppgaven.
+-   🏆 Oppgave: Her er hva du skal gjøre.
+-   💡 Tips: Litt ekstra info som kan være greit å ha for å løse en oppgave.
+-   🚨 Løsningsforslag: Her finner du et eksempel på hvordan du _kan_ løse oppgaven.
 
 ## Oppsett
 
 Slik får du koden ned lokalt på din maskin:
 
-- Klon repoet
-    - gå i terminalen din og skriv `git clone https://github.com/bekk/bootcamp-react-ws.git`
-- Naviger deg inn i mappa som heter `bootcamp-react-ws` ved å skrive dette i terminalen din: `cd bootcamp-react-ws`.
-- Skriv `npm install` for å installere nødvendige avhengigheter for prosjektet.
-- Deretter skriver du `npm run dev` for å starte opp nettsiden.
+-   Klon repoet
+    -   gå i terminalen din og skriv `git clone https://github.com/bekk/bootcamp-react-ws.git`
+-   Naviger deg inn i mappa som heter `bootcamp-react-ws` ved å skrive dette i terminalen din: `cd bootcamp-react-ws`.
+-   Skriv `npm install` for å installere nødvendige avhengigheter for prosjektet.
+-   Deretter skriver du `npm run dev` for å starte opp nettsiden.
 
 Om kloning av repoet skulle være litt knotete kan du bruke denne [CodeSandbox-lenken](https://codesandbox.io/p/sandbox/bootcamp-react-ws-67pf2s) for å redigere rett i browseren
 
@@ -81,11 +82,12 @@ return (
     </>
 )
 ```
+
 </details>
 
 ### Oppgave 2 - lister og events
 
-I denne oppgava skal vi se litt på dynamisk innhold og rendring av komponenter. 
+I denne oppgava skal vi se litt på dynamisk innhold og rendring av komponenter.
 
 I `Blog.jsx`, kommenter inn Facts-funksjonen som ligger øverst i fila, og bruk denne under Title-komponenten din i render-funksjonen.
 
@@ -99,7 +101,7 @@ I `Blog.jsx`, kommenter inn Facts-funksjonen som ligger øverst i fila, og bruk 
 
 🏆 2.2 – Det kan fort bli rotete å ha all koden i en fil så la oss dele opp koden til en Facts-komponent og en Card-komponent. Gå inn i `Card.jsx`-fila og gjør den om til å returnere et listeelement `<li>`. Card-komponenten kan ta inn en prop som f.eks. heter `fact`. Bruk denne komponenten inne i `Facts.jsx`. Send hvert fakta inn som prop til Card-komponenten i `.map()`-funksjonen. <em>Her kan du legge til `"card"` som `className` på li-elementet i Card-komponenten.</em>
 
-🏆 2.3 – Card-komponenten kan gjøres mer dynamisk, så i stedet for å bruke en prop ønsker vi nå at den heller skal ta inn `children`. Fjern `fact`-prop'en og ta heller inn `children` og ta så i bruk `children` i li-elementet i Card-komponenten. Gjør om Facts-komponenten til å sende inn hver fakta som children i stedet for prop. 
+🏆 2.3 – Card-komponenten kan gjøres mer dynamisk, så i stedet for å bruke en prop ønsker vi nå at den heller skal ta inn `children`. Fjern `fact`-prop'en og ta heller inn `children` og ta så i bruk `children` i li-elementet i Card-komponenten. Gjør om Facts-komponenten til å sende inn hver fakta som children i stedet for prop.
 
 💡 `children` er en fin måte å sette sammen flere komponenter på en dynamisk måte, ved å bruke children så "wrapper" man en komponenten rundt en annen komponent. Les mer om children [her](https://react.dev/learn/passing-props-to-a-component#passing-jsx-as-children).
 
@@ -128,8 +130,8 @@ function Card({ children }) {
     )
 }
 ```
-</details>
 
+</details>
 
 ### Oppgave 3 - useState og conditional rendering
 
@@ -151,9 +153,9 @@ I `Blog.jsx`, kommenter inn CoverPhoto-funksjonen som ligger øverst i fila, og 
 
 🏆 3.3 – Vi har lyst til å vise et annet bilde når brukeren trykker på det nåværende bildet – så i stedet for å console.logge trenger vi nå å vite om brukeren har trykket på bildet eller ikke. Lag en `useState` som har verdien `showFirstPicture` og som har en funksjon som heter `setShowFirstPicture`.
 
-💡 useState returnerer alltid en liste på formatet `const [verdi, setVerdi] = useState()`, og du kan kalle disse verdiene hva du vil. 
+💡 useState returnerer alltid en liste på formatet `const [verdi, setVerdi] = useState()`, og du kan kalle disse verdiene hva du vil.
 
-💡 Vi bestemmer om det skal være bolske verdier, tall eller tekst som verdien i useState'en skal ha, i dette tilfellet trenger vi bare en bolsk verdi som forteller om vi skal vise det første bildet eller ikke. Default-verdien kan derfor være `true` første gangen nettsiden blir lastet. 
+💡 Vi bestemmer om det skal være bolske verdier, tall eller tekst som verdien i useState'en skal ha, i dette tilfellet trenger vi bare en bolsk verdi som forteller om vi skal vise det første bildet eller ikke. Default-verdien kan derfor være `true` første gangen nettsiden blir lastet.
 
 💡 Les om useState [her](https://react.dev/reference/react/useState).
 
@@ -164,7 +166,6 @@ I `Blog.jsx`, kommenter inn CoverPhoto-funksjonen som ligger øverst i fila, og 
 💡 Dette kalles conditional rendering og ser slik ut: `condition ? ifConditionIsTrue : ifConditionIsFalse`
 
 ✨ Legg inn bilde av deg selv eller av en hobby eller noe annet du liker, og style nettsiden slik du vil 💅
-
 
 <details>
 <summary>🚨 Løsningsforslag</summary>
@@ -195,6 +196,7 @@ export default function CoverPhoto() {
     )
 }
 ```
+
 </details>
 
 ### Oppgave 4 - useEffect og datahenting
@@ -207,7 +209,7 @@ I `Blog.jsx`, kommenter inn DepartureBoard-funksjonen som ligger øverst i fila,
 
 💡 Her er dependency-arrayet til useEffect'en viktig. Hvis man dropper lista vil useEffect kjøres på hver render, har man en tom liste vil det si at det som er i useEffect'en bare skal kjøres når komponenten mountes, og en liste med verdier trigger bare useEffecten bare når verdiene i lista får en oppdatert verdi.
 
-💡 OBS! Komponenten din vil mountes 2 ganger i developer mode 🙃 – så useEffect som bare skal kjøres på mount vil kjøre to ganger. Forvirrende greier! Grunnen er at React vil stressteste komponenten din og verifisere at den fungerer uavhengig om useEffect kjøres en eller to ganger. 
+💡 OBS! Komponenten din vil mountes 2 ganger i developer mode 🙃 – så useEffect som bare skal kjøres på mount vil kjøre to ganger. Forvirrende greier! Grunnen er at React vil stressteste komponenten din og verifisere at den fungerer uavhengig om useEffect kjøres en eller to ganger.
 
 🏆 4.2 – I stedet for å console-logge til konsollen, kan du nå skrive en async funksjon inne i useEffecten som heter `fetchData` som kaller `fetchDepartures` som er en ferdiglaget funksjon som henter noe data <em>(du trenger ikke bry deg om innholdet i denne funksjonen)</em>. Du kan begynne med å console-logge dataen du får tilbake for å se at nettverkskallet fungerer. Husk å kalle fetchData inne i useEffecten din.
 
@@ -223,6 +225,7 @@ useEffect(() => {
     fetchData()
 }, [])
 ```
+
 </details>
 
 <details>
@@ -235,6 +238,7 @@ useEffect(() => {
             departureTime: string, // avgangstidspunkt
         }>
     }
+
 </details>
 
 💡 Les om henting av data med useEffects [her](https://react.dev/reference/react/useEffect#fetching-data-with-effects)
@@ -251,15 +255,17 @@ useEffect(() => {
 ```
 const { stopPlace, departures } = data
 ```
+
 </details>
 
 🏆 4.5 – Rendre tittel og avgangsinformasjonen. <em>Her kan du legge til `departures` som `className` på `<ul>`-taggen rundt avgangene, og `departure` på hvert `<li>`-element. Du kan også legge til et clockIcon som et bilde for hver avgang som et visuelt tillegg.</em>
 
 ✨ Hent informasjon om et stoppested du kjenner til! 💅
-- Gå på https://entur.no/kart.
-- Skriv inn et stoppested du kjenner til. 
-- Gå i url'en på nettsiden og kopierer id'en som begynner på `NSR:`, f.eks `NSR:StopPlace:58801`.
-- Gå i `client.js` på linje 15 og erstatt den id'en med din egen id for å hente avganger for ditt stoppested!
+
+-   Gå på https://entur.no/kart.
+-   Skriv inn et stoppested du kjenner til.
+-   Gå i url'en på nettsiden og kopierer id'en som begynner på `NSR:`, f.eks `NSR:StopPlace:58801`.
+-   Gå i `client.js` på linje 15 og erstatt den id'en med din egen id for å hente avganger for ditt stoppested!
 
 <details>
 <summary>🚨 Løsningsforslag</summary>
@@ -301,6 +307,7 @@ export default function DepartureBoard() {
   )
 }
 ```
+
 </details>
 
 ### Oppgave 5 - Bonusoppgaver
@@ -310,7 +317,8 @@ Hva! Har du kommet så langt allerede?! Da har jeg noen bonusoppgaver til deg! D
 🏆 Lag en bildekarusell
 
 I stedet for å klikke på bildet for å endre det så kan du lage en karusell der brukeren kan bla seg gjennom bilder.
-- Hvis du trenger bilder kan du bruke https://unsplash.com/.
+
+-   Hvis du trenger bilder kan du bruke https://unsplash.com/.
 
 🏆 Personaliser bloggsiden din enda mer!
 
@@ -322,6 +330,6 @@ Lyst til å leke mer med datahenting? Det er brukt GraphQL for å hente data fra
 
 🏆 Context
 
-Bruk [React Context](https://react.dev/learn/passing-data-deeply-with-context) til å lage dark-mode på siden din når brukeren trykker på en knapp. 
-- Hint: Bruk CSS-variabler.
+Bruk [React Context](https://react.dev/learn/passing-data-deeply-with-context) til å lage dark-mode på siden din når brukeren trykker på en knapp.
 
+-   Hint: Bruk CSS-variabler.

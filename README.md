@@ -16,19 +16,39 @@ Du kommer til å se noen emojis i oppgavene. Disse betyr:
 -   💡 Tips: Litt ekstra info som kan være greit å ha for å løse en oppgave.
 -   🚨 Løsningsforslag: Her finner du et eksempel på hvordan du _kan_ løse oppgaven.
 
-# Oppsett
+## Oppsett
 
-Slik får du koden ned lokalt på din maskin:
+### Få koden lokalt på egen maskin
 
--   Klon repoet
-    -   gå i terminalen din og skriv `git clone https://github.com/bekk/bootcamp-react-ws.git`
--   Naviger deg inn i mappa som heter `bootcamp-react-ws` ved å skrive dette i terminalen din: `cd bootcamp-react-ws`.
--   Skriv `npm install` for å installere nødvendige avhengigheter for prosjektet.
--   Deretter skriver du `npm run dev` for å starte opp nettsiden.
+1. Klon repoet ved å skrive dette i terminalen din:
+
+    ```bash
+    	git clone https://github.com/bekk/bootcamp-react-ws.git
+    ```
+
+2. Naviger deg inn i mappa som heter `bootcamp-react-ws` ved å skrive dette i terminalen din
+
+    ```bash
+    	cd bootcamp-react-ws
+    ```
+
+3. Installer nødvendige avhengigheter for prosjektet:
+
+    ```bash
+    	npm install
+    ```
+
+4. Start opp nettsiden ved å skrive:
+
+    ```bash
+    	npm run dev
+    ```
+
+### Sandbox
 
 Om kloning av repoet skulle være litt knotete kan du bruke denne [CodeSandbox-lenken](https://codesandbox.io/p/sandbox/bootcamp-react-ws-67pf2s) for å redigere rett i browseren
 
-⚠️ NB! Trykk på `Fork` oppe i det høyre hjørnet for å få din egne versjon av koden.
+> [!WARNING] NB! Trykk på `Fork` oppe i det høyre hjørnet for å få din egne versjon av koden.
 
 # Oppgaver
 

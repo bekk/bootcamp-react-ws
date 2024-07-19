@@ -89,7 +89,7 @@ Gå inn i `App.jsx`-komponenten inne i `src`-mappa, og fjern all koden som er me
 
 ### Oppgave 1.6
 
-🏆 Inne i Title.jsx, legg til className-prop ‘title’ på h1-elementet. Nå kan du style komponenten slik du vil ved å legge i `.title` selektoren du finner i `App.css`.
+🏆 Inne i Title.jsx, legg til className-prop ‘title’ på h1-elementet. Nå kan du style komponenten slik du vil i `.title` selektoren du finner i `App.css`.
 
 > 💡 Ikke vært så mye borti CSS? Les mer om CSS [her](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics).
 
@@ -136,13 +136,13 @@ I `Blog.jsx`, kommenter inn Facts-funksjonen som ligger øverst i fila, og bruk 
 
 ### Oppgave 2.2
 
-🏆 Bli kvitt warningen i konsollen om at hvert element i lista trenger en unik identifikator. gjøres ved å bruke attributtet `key` på hvert element. Husk at `key` må være unik for hvert element i lista. Les om `key` mer [her](https://react.dev/learn/rendering-lists#keeping-list-items-in-order-with-key).
+🏆 Bli kvitt warningen i konsollen om at hvert element i lista trenger en unik identifikator. Dette gjøres ved å bruke `key`-attributten på hvert element. Husk at `key` må være unik for hvert element i lista. Les om `key` mer [her](https://react.dev/learn/rendering-lists#keeping-list-items-in-order-with-key).
 
 ### Oppgave 2.3
 
 Det kan bli rotete å ha all koden i en fil, så la oss dele opp koden i flere komponenter.
 
-🏆 Lag en egen komponent for `Card` som returnerer et listeelement `<li>` og ta komponenten i bruk inne i `Facts.jsx`. `Card` skal ta inn faktaen som skal vises som en prop (f.eks. `facts`), og klassenavnet `card` kan benyttes for å legge på styling.
+🏆 Lag en egen komponent, `Card`, som returnerer et listeelement `<li>` og bruk komponenten i `Facts.jsx`. `Card` skal ta inn faktaen som skal vises som en prop (f.eks. `facts`). Klassenavnet `card` kan benyttes for å legge på styling.
 
 ### Oppgave 2.4
 
@@ -222,7 +222,7 @@ Vi bestemmer om det skal være bolske verdier, tall eller tekst som verdien i us
 
 > 💡 Dette kalles conditional rendering og ser slik ut: `condition ? ifConditionIsTrue : ifConditionIsFalse`
 
-✨ Legg inn bilde av deg selv eller av en hobby eller noe annet du liker, og style nettsiden slik du vil 💅
+✨ Legg inn bilde av deg selv, av en hobby eller noe annet du liker, og style nettsiden slik du vil 💅
 
 ### Løsningsforslag
 

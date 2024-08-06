@@ -83,13 +83,13 @@ Gå inn i `App.jsx`-komponenten inne i `src`-mappa, og fjern all koden som er me
 
 ### Oppgave 1.5
 
-🏆 I stedet for å hardkode navnet ditt i komponenten, gjør om Title-komponenten din til å ta inn en prop som heter `name`. Da kan du sende inn navnet ditt i Blog.jsx der du bruker Title.jsx
+🏆 I stedet for å hardkode navnet ditt i komponenten, gjør om Title-komponenten din til å ta inn en prop som heter `name`. Da kan du sende inn navnet ditt i Blog.jsx der du bruker `<Title />`.
 
 > 💡 Props kan hete akkurat hva du vil, og kan være akkurat den datastrukturen du vil at den skal være. Les mer om props [her](https://react.dev/learn/passing-props-to-a-component#step-1-pass-props-to-the-child-component).
 
 ### Oppgave 1.6
 
-🏆 Inne i Title.jsx, legg til className-prop ‘title’ på h1-elementet. Gå i `App.css` så kan du style komponenten din slik du vil den skal se ut i `.title` selektoren
+🏆 Inne i Title.jsx, legg til className-prop ‘title’ på h1-elementet. Nå kan du style komponenten slik du vil i `.title` selektoren du finner i `App.css`.
 
 > 💡 Ikke vært så mye borti CSS? Les mer om CSS [her](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics).
 
@@ -134,15 +134,21 @@ I `Blog.jsx`, kommenter inn Facts-funksjonen som ligger øverst i fila, og bruk 
 
 > 💡 Det finnes flere liste-operasjoner i JavaScript, `.map()` itererer gjennom hvert element i lista og du kan bestemme hva hvert element skal mappes om til. Les mer om map [her](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map).
 
-> 💡 Du vil få en warning i konsollen om at hvert element i lista trenger en unik identifikator, dette gjøres ved å bruke attributtet `key` på hvert element. Husk at `key` må være unik for hvert element i lista. Les om `key` mer [her](https://react.dev/learn/rendering-lists#keeping-list-items-in-order-with-key).
-
 ### Oppgave 2.2
 
-🏆 Det kan fort bli rotete å ha all koden i en fil så la oss dele opp koden til en Facts-komponent og en Card-komponent. Gå inn i `Card.jsx`-fila og gjør den om til å returnere et listeelement `<li>`. Card-komponenten kan ta inn en prop som f.eks. heter `fact`. Bruk denne komponenten inne i `Facts.jsx`. Send hvert fakta inn som prop til Card-komponenten i `.map()`-funksjonen. <em>Her kan du legge til `"card"` som `className` på li-elementet i Card-komponenten.</em>
+🏆 Bli kvitt warningen i konsollen om at hvert element i lista trenger en unik identifikator. Dette gjøres ved å bruke `key`-attributten på hvert element. Husk at `key` må være unik for hvert element i lista.
+
+> 💡 Les om `key` mer [her](https://react.dev/learn/rendering-lists#keeping-list-items-in-order-with-key).
 
 ### Oppgave 2.3
 
-🏆 Card-komponenten kan gjøres mer dynamisk, så i stedet for å bruke en prop ønsker vi nå at den heller skal ta inn `children`. Fjern `fact`-prop'en og ta heller inn `children` og ta så i bruk `children` i li-elementet i Card-komponenten. Gjør om Facts-komponenten til å sende inn hver fakta som children i stedet for prop.
+Det kan bli rotete å ha all koden i en fil, så la oss dele opp koden i flere komponenter.
+
+🏆 Lag en egen komponent, `Card`, som returnerer et listeelement `<li>` og bruk komponenten i `Facts.jsx`. `Card` skal ta inn faktaen som skal vises som en prop (f.eks. `facts`). Klassenavnet `card` kan benyttes for å legge på styling.
+
+### Oppgave 2.4
+
+🏆 Endre Card-komponenten slik at den tar inn fakta som `children` fremfor å sendes inn gjennom `fact`-prop'en, slik at den blir mer dynamisk. Gjør nødvendige endringer i `Facts`-komponenten.
 
 > 💡 `children` er en fin måte å sette sammen flere komponenter på en dynamisk måte, ved å bruke children så "wrapper" man en komponenten rundt en annen komponent. Les mer om children [her](https://react.dev/learn/passing-props-to-a-component#passing-jsx-as-children).
 
@@ -184,29 +190,29 @@ I `Blog.jsx`, kommenter inn CoverPhoto-funksjonen som ligger øverst i fila, og 
 
 ### Oppgave 3.1
 
-🏆 Gå inn i mappa som heter `Oppgave3` og åpne `CoverPhoto.jsx` – Endre CoverPhoto-komponenten slik at den returnerer et bildet som har stien `"/src/assets/img1.jpg"`. <em>Gi komponenten klassenavnet `"cover-photo"`</em>.
+Gå inn i mappa som heter `Oppgave3` og åpne `CoverPhoto.jsx`
+
+🏆 Endre CoverPhoto-komponenten slik at den returnerer et bildet som har stien `"/src/assets/img1.jpg"`. <em>Gi komponenten klassenavnet `"cover-photo"`</em>.
 
 > 💡 Her kan du bruke `<img>`-element for å vise et bilde.
 
 ### Oppgave 3.2
 
-🏆 Gjør det mulig for brukeren å trykke på bildet, i første omgang kan du skriv noe til konsollen når brukeren trykker på bildet.
-
-> 💡 Du kan wrappe `<img>`-taggen i en `<button>`-tag.
+🏆 Gjør det mulig for brukeren å trykke på bildet ved å legge bildet i en knapp (`<button>`) og print en melding til konsollen når knappen trykkes på.
 
 > 💡 For å logge til konsollen kan du bruke `console.log('din tekst her')`, og for å se konsollen kan du høyre-klikke i nettleseren og trykke på "inspiser" eller "inspect".
 
-> 💡 Les mer om events [her](https://react.dev/learn/responding-to-events).
+Les mer om events [her](https://react.dev/learn/responding-to-events).
 
 ### Oppgave 3.3
 
-🏆 Vi har lyst til å vise et annet bilde når brukeren trykker på det nåværende bildet – så i stedet for å console.logge trenger vi nå å vite om brukeren har trykket på bildet eller ikke. Lag en `useState` som har verdien `showFirstPicture` og som har en funksjon som heter `setShowFirstPicture`.
+Vi har lyst til å vise et annet bilde når brukeren trykker på det nåværende bildet – så i stedet for å console.logge trenger vi nå å vite om brukeren har trykket på bildet eller ikke.
+
+🏆 Lag en `useState` som har verdien `showFirstPicture` og en funksjon som heter `setShowFirstPicture`, med default-verdi satt til `true`.
 
 > 💡 useState returnerer alltid en liste på formatet `const [verdi, setVerdi] = useState()`, og du kan kalle disse verdiene hva du vil.
 
-> 💡 Vi bestemmer om det skal være bolske verdier, tall eller tekst som verdien i useState'en skal ha, i dette tilfellet trenger vi bare en bolsk verdi som forteller om vi skal vise det første bildet eller ikke. Default-verdien kan derfor være `true` første gangen nettsiden blir lastet.
-
-> 💡 Les om useState [her](https://react.dev/reference/react/useState).
+Vi bestemmer om det skal være bolske verdier, tall eller tekst som verdien i useState'en skal ha, i dette tilfellet trenger vi bare en bolsk verdi som forteller om vi skal vise det første bildet eller ikke. Les om useState [her](https://react.dev/reference/react/useState).
 
 ### Oppgave 3.4
 
@@ -214,11 +220,11 @@ I `Blog.jsx`, kommenter inn CoverPhoto-funksjonen som ligger øverst i fila, og 
 
 ### Oppgave 3.5
 
-🏆 I render-funksjonen kan du nå sjekke på verdien `showFirstPicture` og vise bilde 1 eller bilde 2 avhengig om brukeren har trykket på bildet eller ikke.
+🏆 I render-funksjonen kan du nå bruke verdien til `showFirstPicture` for å vise enten bilde 1 eller bilde 2, avhengig om brukeren har trykket på bildet eller ikke. _Bilde 2 finner du på stien `/src/assets/img2.jpg`._
 
 > 💡 Dette kalles conditional rendering og ser slik ut: `condition ? ifConditionIsTrue : ifConditionIsFalse`
 
-✨ Legg inn bilde av deg selv eller av en hobby eller noe annet du liker, og style nettsiden slik du vil 💅
+✨ Legg inn bilde av deg selv, av en hobby eller noe annet du liker, og style nettsiden slik du vil 💅
 
 ### Løsningsforslag
 
@@ -264,11 +270,11 @@ I `Blog.jsx`, kommenter inn DepartureBoard-funksjonen som ligger øverst i fila,
 
 ### Oppgave 4.1
 
-🏆 Skriv en useEffect inne i `DepartureBoard.jsx` som ligger i `Oppgave4`-mappa. Som en oppvarmingsoppgave kan du begynne med å console-logge en vilkårlig tekst til konsollen når komponenten mountes.
+🏆 Lag en useEffect inne i `DepartureBoard.jsx` som ligger i `Oppgave4`-mappa. Som en oppvarmingsoppgave kan du begynne med å console-logge en vilkårlig tekst til konsollen når komponenten mountes.
 
 > 💡 Her er dependency-arrayet til useEffect'en viktig. Hvis man dropper lista vil useEffect kjøres på hver render, har man en tom liste vil det si at det som er i useEffect'en bare skal kjøres når komponenten mountes, og en liste med verdier trigger bare useEffecten bare når verdiene i lista får en oppdatert verdi.
 
-> 💡 OBS! Komponenten din vil mountes 2 ganger i developer mode 🙃 – så useEffect som bare skal kjøres på mount vil kjøre to ganger. Forvirrende greier! Grunnen er at React vil stressteste komponenten din og verifisere at den fungerer uavhengig om useEffect kjøres en eller to ganger.
+OBS! Komponenten din vil mountes 2 ganger i developer mode 🙃 – så useEffect som bare skal kjøres på mount vil kjøre to ganger. Forvirrende greier! Grunnen er at React vil stressteste komponenten din og verifisere at den fungerer uavhengig om useEffect kjøres en eller to ganger.
 
 ### Oppgave 4.2
 
@@ -308,13 +314,11 @@ Les om henting av data med useEffects [her](https://react.dev/reference/react/us
 
 ### Oppgave 4.3
 
-🏆 Lag to states i komponenten din, en som tar seg av tittelen på stoppestedet, et annet som lagrer alle avgangene.
-
-💡 De kan f.eks hete `[title, setTitle]` og `[departures, setDepartures]`.
+🏆 Lag to states i komponenten din, en som tar seg av tittelen på stoppestedet, et annet som lagrer alle avgangene. De kan f.eks hete `[title, setTitle]` og `[departures, setDepartures]`.
 
 ### Oppgave 4.4
 
-🏆 I useEffecten etter du har henta data fra endepunktet så kan du bruke de to set-funksjonene du fikk av useState til å oppdatere verdien til `title` og `departures`.
+🏆 Oppdater verdiene til `title` og `departures` med dataen fra endepunktet i useEffecten.
 
 <details>
 <summary>💡 I JavaScript kan du destrukturere objekter</summary>
@@ -329,7 +333,9 @@ const { stopPlace, departures } = data;
 
 🏆 Rendre tittel og avgangsinformasjonen. <em>Her kan du legge til `departures` som `className` på `<ul>`-taggen rundt avgangene, og `departure` på hvert `<li>`-element. Du kan også legge til et clockIcon som et bilde for hver avgang som et visuelt tillegg.</em>
 
-✨ Hent informasjon om et stoppested du kjenner til! 💅
+### Oppgave 4.6
+
+🏆 Hent informasjon om et stoppested du kjenner til! 💅
 
 -   Gå på https://entur.no/kart.
 -   Skriv inn et stoppested du kjenner til.

@@ -136,7 +136,9 @@ I `Blog.jsx`, kommenter inn Facts-funksjonen som ligger øverst i fila, og bruk 
 
 ### Oppgave 2.2
 
-🏆 Bli kvitt warningen i konsollen om at hvert element i lista trenger en unik identifikator. Dette gjøres ved å bruke `key`-attributten på hvert element. Husk at `key` må være unik for hvert element i lista. Les om `key` mer [her](https://react.dev/learn/rendering-lists#keeping-list-items-in-order-with-key).
+🏆 Bli kvitt warningen i konsollen om at hvert element i lista trenger en unik identifikator. Dette gjøres ved å bruke `key`-attributten på hvert element. Husk at `key` må være unik for hvert element i lista.
+
+> 💡 Les om `key` mer [her](https://react.dev/learn/rendering-lists#keeping-list-items-in-order-with-key).
 
 ### Oppgave 2.3
 
